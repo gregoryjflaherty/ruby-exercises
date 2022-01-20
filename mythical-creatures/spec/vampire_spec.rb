@@ -1,6 +1,6 @@
 require 'rspec'
 require './lib/vampire'
-
+#
 RSpec.describe Vampire do
   it 'has a name' do
     vampire = Vampire.new('Dracula')

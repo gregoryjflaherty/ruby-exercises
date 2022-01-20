@@ -1,6 +1,6 @@
 require 'rspec'
 require_relative 'apple'
-
+#
 RSpec.describe Apple do
   it 'is not ripe when created' do
     apple = Apple.new
@@ -18,4 +18,3 @@ RSpec.describe Apple do
     expect(apple.ripe?).to be true
   end
 end
-

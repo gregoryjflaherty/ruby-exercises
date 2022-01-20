@@ -1,3 +1,4 @@
+#DONE
 require 'rspec'
 require_relative '../lib/eel'
 require_relative '../lib/narwhal'
@@ -27,7 +28,7 @@ RSpec.describe Octopus do
 
   it 'can have any animal as a friend' do
     eel = Eel.new("Earl")
-    orville = Octopus.new("Orville", nancy)
+    orville = Octopus.new("Orville", eel)
 
     expect(orville.friend).to eq(eel)
   end

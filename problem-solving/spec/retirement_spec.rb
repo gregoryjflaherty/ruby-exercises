@@ -1,4 +1,4 @@
-require "./lib/retirement"
+require "../lib/retirement"
 
 RSpec.describe Retirement do
 
@@ -30,7 +30,7 @@ RSpec.describe Retirement do
   end
 
   it 'errors with a negative retirement age' do
-    # write your test here
+    kobe = Retirement.new
+    expect(kobe.calculate(24, -8)).to eq('Error. Age cannot be negative.')
   end
 end
-

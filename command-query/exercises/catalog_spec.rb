@@ -8,7 +8,7 @@ RSpec.describe Catalog do
     expect(catalog.cheapest).to be_nil
   end
 
-  it 'has a cheapest of one' do
+it 'has a cheapest of one' do
     catalog = Catalog.new
     catalog << Product.new('scissors', 8)
     expect(catalog.cheapest).to eq('scissors')

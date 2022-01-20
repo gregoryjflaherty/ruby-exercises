@@ -7,7 +7,7 @@ RSpec.describe Adult do
 
     adult.consume_an_alcoholic_beverage
     expect(adult.sober?).to be true
-
+  
     adult.consume_an_alcoholic_beverage
     expect(adult.sober?).to be true
 

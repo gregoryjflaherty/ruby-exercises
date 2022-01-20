@@ -1,3 +1,4 @@
+#DONE
 require 'rspec'
 require_relative '../lib/narwhal'
 
@@ -5,7 +6,7 @@ RSpec.describe Narwhal do
   it 'exists' do
     nancy = Narwhal.new({cute: true, weight: 500, name: "Nancy"})
 
-    expeec(nancy).to be_an_instance_of(Narwhal)
+    expect(nancy).to be_an_instance_of(Narwhal)
   end
 
   it 'has a name' do

@@ -26,4 +26,4 @@ RSpec.describe Unicorn do
     expect(unicorn.say('Wonderful!')).to eq('**;* Wonderful! **;*')
     expect(unicorn.say('I dont like you very much.')).to eq('**;* I dont like you very much. **;*')
   end
-end
+end 

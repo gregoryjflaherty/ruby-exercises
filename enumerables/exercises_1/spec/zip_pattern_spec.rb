@@ -1,3 +1,4 @@
+
 RSpec.describe 'zip pattern' do
 
   it 'speed interview pairs' do
@@ -35,12 +36,17 @@ RSpec.describe 'zip pattern' do
     expect(pairs).to eq([["G", "G"], ["A", "A"], ["T", "T"], ["T", "G"], ["A", "A"], ["C", "C"], ["A", "A"]])
   end
 
-  xit 'solitaire' do
+  it 'solitaire' do
     list1 = ["Ace", "6", "10", "Queen"]
     list2 = [:clubs, :diamonds, :hearts, :spades]
-    # Your code goes here
+    cards = []
+
+    require "pry-byebug"
+    binding.pry
+
     expect(cards).to eq([["Ace", :clubs], ["6", :diamonds], ["10", :hearts], ["Queen", :spades]])
   end
+
 
   xit 'colors' do
     list1 = ["shoes", "tie", "umbrella"]
@@ -50,4 +56,3 @@ RSpec.describe 'zip pattern' do
   end
 
 end
-

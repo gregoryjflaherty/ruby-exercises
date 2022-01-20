@@ -1,6 +1,6 @@
 require 'rspec'
 require_relative 'appointments'
-
+#
 RSpec.describe Appointments do
   it 'has no appointments' do
     slots = Appointments.new
